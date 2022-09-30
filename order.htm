@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Two-part order form</title>
+</head>
+<body class="body">
+<form class="container" id="form" method="post">
+    <h1 class="form__header">
+        Sign Up
+    </h1>
+    <div class="label--wrapper">
+    <label class="label label--active" title="yourInfo">Your info</label>
+    <label class="label" title="yourPreferences">Your preferences</label>
+    </div>
+    <div class="form__inputs-container">
+        <div class="form__inputs-container--fields">
+            <div class="form__inputs--wrapper">
+                <label for="username">Username</label>
+                <input class="form-input-filed" type="text" data-required="username" id="username" name="username" data-invalid-message="Please provide username longer than 2 characters and letters only" >
+            </div>
+            <div class="form__inputs--wrapper">
+                <label for="email">Email Address</label>
+                <input class="form-input-filed" type="email" data-required="email" id="email" name="email" data-invalid-message="Please provide valid message example@example@.com">
+            </div>
+            <div class="form__inputs--wrapper">
+                <label for="phone">Phone</label>
+                <input class="form-input-filed" type="phone" data-required="phone" id="phone" name="phone" data-invalid-message="Please provide digits only valid phone number">
+            </div>
+        </div>
+        <div class="form__inputs-container--fields">
+            <div class="form__inputs--wrapper">
+                <label for="address">Address</label>
+                <input class="form-input-filed" type="address" data-required="address" id="address" name="address" data-invalid-message="Provide address" >
+            </div>
+            <div class="form__inputs--wrapper">
+                <label for="city">City</label>
+                <input class="form-input-filed form-input-filed--medium" type="city" data-required="city" id="city" name="city" data-invalid-message="Provide city name(letters only)">
+            </div>
+            <div class="form__inputs--wrapper">
+                <label for="state">State</label>
+                <input class="form-input-filed form-input-filed--short" type="state" data-required="state" id="state" name="state" data-invalid-message="Provide state name(letters only)">
+            </div>
+            <div class="form__inputs--wrapper">
+                <label for="zip">Zip</label>
+                <input class="form-input-filed form-input-filed--medium" type="zip" data-required="zip" id="zip" name="zip" data-invalid-message="Please provide digits only valid zip">
+            </div>
+        </div>
+    </div>
+    <div class="form__submit container">
+        <input class="submit" id="submit" type="submit" value="Next >">
+        <a class="redirect" href="#">Click</a>
+    </div>
+</form>
+<script src="js/validator.js"></script>
+<script src="js/serialize.js"></script>
+<script src="js/listenerAndDataSender.js"></script>
+</body>
+</html>
